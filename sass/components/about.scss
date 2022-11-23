@@ -1,0 +1,51 @@
+.about{
+
+    &_content{
+        margin-top: 5rem;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        &-separator{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 20px;
+            height: 5px;
+            background-color:$lightAccent;
+            border-radius: $commonBorderRadius;
+        }
+
+        p{
+            width: 80%;
+            font-weight: 100;
+            margin-bottom: 40px;
+        }
+    }
+
+    &_info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &-description{
+            width: 40%;
+            min-width: 400px;
+        }
+        &-skills{
+            width: 40%;
+            min-width: 400px;
+        }
+
+    }
+}
