@@ -1,0 +1,130 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 5rem;
+    background-color: $lightShades;
+
+    &_content{
+        display: flex;
+        height:100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+
+        @include respond(phone){
+            padding: 0.5rem 1.5rem;
+        }
+
+    }
+    &_logo-container{
+        display: flex;
+        align-items: center;
+
+    }
+    &_img-container{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: $primaryColor;
+        margin-right: 2rem;
+
+        @include respond(phone){
+            margin-right: 1rem;
+        }
+    }
+    &_img-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &_myName{
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $darkShades;
+    }
+
+    &_links{
+        display: flex;
+        align-items: center;
+
+
+        &-list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 3rem;
+            @include respond(tab-port){
+                display: none;
+            }
+        }
+        &-container{
+            margin-right: 2rem;
+            @include respond(tab-land){
+                margin-right: 1rem;
+            }
+        }
+    }
+    &_link{
+        text-transform: uppercase;
+        font-weight: 600;
+        &:hover{
+            cursor: pointer;
+            color: $primaryColor;
+
+        }
+    }
+
+    &_ham-menu-cont{
+        display:none;
+        cursor: pointer;
+        @include respond(tab-port){
+            display: block;
+        }
+
+    }
+
+    &_mobile{
+        background-color: $lightShades;
+        color: $darkShades;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        visibility: hidden;
+
+            @include respond(tab-port){
+                visibility: visible;
+
+            }
+        
+
+        &-link{
+            a{
+                display: block;
+                padding: 1rem 2rem;
+                text-transform: uppercase;
+                color: $darkShades;
+                border-bottom: 1px solid $darkAccent;
+                text-align: right;
+                font-weight: 600;
+                letter-spacing: 2px;
+                transition: color 1.3s;
+
+                &:hover{
+                    cursor: pointer;
+                    color: $primaryColor;
+                }
+            }
+            &:first-child{
+                a{
+                    border-top: 1px solid $darkAccent;
+                }
+            }
+        }
+    }
+}
