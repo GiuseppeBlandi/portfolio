@@ -1,7 +1,8 @@
 .about{
-
+    background-image: linear-gradient(to bottom, #ffffff, #f7f7f7, #efefef, #e8e8e8, #e0e0e0);
     &_content{
-        margin-top: 5rem;
+        padding-top: 5rem;
+        //margin-top: 5rem;
         height: auto;
         width: 100%;
         display: flex;
@@ -15,19 +16,13 @@
             font-weight: 600;
             text-transform: uppercase;
         }
-        &-separator{
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 20px;
-            height: 5px;
-            background-color:$lightAccent;
-            border-radius: $commonBorderRadius;
-        }
+
 
         p{
             width: 80%;
-            font-weight: 100;
-            margin-bottom: 40px;
+            margin-bottom: 5rem;
+            color: $primaryColor;
+            font-size:1.2rem;
         }
     }
 
@@ -35,17 +30,38 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
 
-        &-description{
+        &-description,&-skills{
             width: 40%;
-            min-width: 400px;
-        }
-        &-skills{
-            width: 40%;
-            min-width: 400px;
+            h3{
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            p{
+                margin-bottom: 1rem;
+                color: $primaryColor;
+                font-size: 1.2rem;
+            }
+            @include respond(tab-port){
+                width: 80%;
+            }
         }
 
+    }
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    &_skill{
+        width: auto;
+        min-width: 25%;
+        padding: 0.75rem;
+        border-radius: $commonBorderRadius;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        background-image: $gradient;
+        text-align: center;
     }
 }
