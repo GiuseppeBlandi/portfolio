@@ -1,8 +1,7 @@
 .about{
-    background-image: linear-gradient(to bottom, #ffffff, #f7f7f7, #efefef, #e8e8e8, #e0e0e0);
+    
     &_content{
         padding-top: 5rem;
-        //margin-top: 5rem;
         height: auto;
         width: 100%;
         display: flex;
@@ -10,20 +9,6 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-
-        h2{
-            font-size: 2rem;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-
-        p{
-            width: 80%;
-            margin-bottom: 5rem;
-            color: $primaryColor;
-            font-size:1.2rem;
-        }
     }
 
     &_info{
@@ -35,15 +20,8 @@
 
         &-description,&-skills{
             width: 40%;
-            h3{
-                font-size: 1.5rem;
-                margin-bottom: 1.5rem;
-            }
-            p{
-                margin-bottom: 1rem;
-                color: $primaryColor;
-                font-size: 1.2rem;
-            }
+
+
             @include respond(tab-port){
                 width: 80%;
             }

@@ -39,6 +39,32 @@ body{
 
 }
 
+
+h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p{
+  width: 80%;
+  margin-bottom: 5rem;
+  color: $primaryColor;
+  font-size:1.2rem;
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -75,4 +101,8 @@ textarea {
   height: 0.5rem;
   background-image: $gradient;;
   border-radius: $commonBorderRadius;
+}
+
+.red{
+  color:red;
 }

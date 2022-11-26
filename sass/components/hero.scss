@@ -19,13 +19,6 @@
         align-items: center;
 
 
-        h1{
-            text-transform: uppercase;
-            font-size: 3rem;
-            font-weight: 900;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
         @include respond(tab-port){
             width: 95%;
         }
