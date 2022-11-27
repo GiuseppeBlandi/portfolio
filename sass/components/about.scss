@@ -1,5 +1,5 @@
 .about{
-    
+    background-image: linear-gradient(to bottom, #fdfdfd, #f6f6f6, #eeeeee, #e7e7e7, #e0e0e0);
     &_content{
         padding-top: 5rem;
         height: auto;
@@ -41,5 +41,6 @@
         margin-bottom: 1rem;
         background-image: $gradient;
         text-align: center;
+        font-weight: 400;
     }
 }

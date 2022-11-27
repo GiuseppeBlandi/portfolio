@@ -1,0 +1,73 @@
+.contacts{
+    background-image: linear-gradient(to bottom, #fdfdfd, #f6f6f6, #eeeeee, #e7e7e7, #e0e0e0);
+    &_content{
+        padding: 5rem 0;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        &_form{
+            background-image: $gradient;
+            padding:5rem;
+            border-radius:$commonBorderRadius;
+            width: 50%;
+
+            @include respond(tab-port){
+                width: 70%;
+            }
+
+            @include respond(phone){
+                width:90%;
+                padding:1rem;
+            }
+            form{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: left;
+
+            }
+            &-field{
+                height: 3rem;
+                padding: 1rem;
+                margin-bottom: 1rem;
+                border-radius: $commonBorderRadius;
+                border: 1px solid rgb(235, 235, 235);
+                background: rgba(rgb(240, 240, 240), 1);
+                
+            }
+            &-label{
+                margin-bottom: 0.5rem;
+                font-weight: 700;
+            }
+            &-textarea{
+                height: 8rem;
+                padding:1rem;
+                border-radius: $commonBorderRadius;
+                margin-bottom: 1rem;
+                border: 1px solid rgb(235, 235, 235);
+                background: rgba(rgb(240, 240, 240), 1);
+            }
+            &-button{
+                width: 30%;
+                height: 3rem;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                border-radius: $commonBorderRadius;
+                background-color: $darkAccent;
+                @include respond(phone){
+                    width: 100%;
+                }
+                &:hover{
+                    border-radius: 10px;
+                    background-color: $lightAccent;
+                }
+            }
+        }
+    }
+}

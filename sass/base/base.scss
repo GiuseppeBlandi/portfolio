@@ -8,7 +8,7 @@
 }
 
 html{
-
+  height: -webkit-fill-available;
   scroll-behavior: smooth;
  /* 
   @include respond(phone) {
@@ -59,7 +59,7 @@ h3{
 }
 
 p{
-  width: 80%;
+  width: 100%;
   margin-bottom: 5rem;
   color: $primaryColor;
   font-size:1.2rem;

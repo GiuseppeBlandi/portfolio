@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
       <div class="about_content">
         <h2>About me</h2>
         <div class="separator"></div>
@@ -176,7 +176,87 @@
       </div>
     </section>
 
-    <section class="contacts" id="contact"></section>
+    <section class="contacts" id="contact">
+      <div class="contacts_content">
+        <h2>CONTACT</h2>
+        <div class="separator"></div>
+        <p>
+          Fell free to contact me by submitting the form below or
+          <a href="mailto:giuseppebalndi89@gmail.com"
+            ><strong>send me an Email</strong>
+          </a>
+        </p>
+        <div class="contacts_content_form">
+          <form name="contacts" method="POST" data-netlify="true">
+            <label class="contacts_content_form-label" for=""
+              >Name or Company</label
+            >
+            <input
+              name="full-name"
+              class="contacts_content_form-field"
+              type="text"
+              placeholder="Enter your name..."
+              required
+            />
+
+            <label class="contacts_content_form-label" for="">E-mail</label>
+            <input
+              name="email"
+              class="contacts_content_form-field"
+              type="email"
+              placeholder="Enter your email..."
+              required
+            />
+
+            <label class="contacts_content_form-label" for="">Message</label>
+            <textarea
+              name="textarea"
+              class="contacts_content_form-textarea"
+              placeholder="Enter your message..."
+              maxlength="500"
+              required
+            ></textarea>
+
+            <button type="submit" class="contacts_content_form-button">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer_content">
+        <div class="footer_content-info">
+          <h2>Giuseppe Blandi</h2>
+          <p>
+            A Frontend focused Web Devoloper, always interested in learning
+            something new and grow all my skills. Looking for my first job.
+          </p>
+        </div>
+        <div class="footer_content-social">
+          <h2>Social</h2>
+          <div class="footer_content-social-icon">
+            <a
+              href="https://github.com/GiuseppeBlandi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/github-ico.png" alt="github icon" />
+            </a>
+            <a
+              href="http://https://www.linkedin.com/in/giuseppe-blandi-06b7b21ba/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/linkedin-ico.png" alt="linkedin icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <p>© Copyright 2022. Made by Giuseppe Blandi</p>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

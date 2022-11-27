@@ -1,0 +1,56 @@
+.footer{
+    background-color: rgb(20, 20, 20);
+    color:$lightAccent;
+    padding: 5rem 5rem 2rem 5rem;
+    &_content{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid $lightAccent;
+        
+        @include respond(tab-port){
+            justify-content: center;
+        }
+        &-info,&-social{
+            width: 50%;
+            @include respond(tab-port){
+                width: 80%;
+            }
+            p{
+                padding-top: 2rem;
+            }
+        }
+        &-social{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            @include respond(tab-port){
+                align-items: flex-start;
+                margin-bottom: 2rem;
+                
+            }
+            &-icon{
+                display: flex;
+                align-items: center;
+                padding-top: 2rem;
+                a{
+                    height: 3rem;
+                    width: 3rem;
+                    margin-left: 2rem;
+                    img{
+                        height:100%
+                    }
+                }
+            }
+        }
+    }
+    &_copyright{
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
